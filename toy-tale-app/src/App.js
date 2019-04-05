@@ -94,7 +94,7 @@ class App extends Component {
     <ToyForm display={this.state.viewform} handleSubmit={this.handleSubmit}/>
     
     
-    <ToyList toys={this.state.toys} showForms={this.showForms} handleLike={this.handleLike}/>   
+    <ToyList toys={this.state.filtered.length ===0 ? this.state.toys : this.state.filtered} showForms={this.showForms} handleLike={this.handleLike}/>   
     </div> 
 );
   }
